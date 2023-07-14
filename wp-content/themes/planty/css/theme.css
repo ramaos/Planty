@@ -6,3 +6,27 @@ main {
   max-width: 1440px !important;
   margin: auto !important;
 }
+.elementor-44 {
+  position: sticky !important;
+  background-color: antiquewhite;
+}
+#wpforms-594 .wpforms-field-label {
+  font-family: syne;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+#wpforms-594 .wpforms-field-large {
+  height: 70px;
+  border-radius: 10px;
+}
+#wpforms-594 .wpforms-submit-container {
+  display: flex;
+  justify-content: center;
+}
+#wpforms-594 .wpforms-submit {
+  font-family: syne;
+  height: 55px;
+  width: 170px;
+  background-color: #e0b9b4;
+}

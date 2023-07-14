@@ -1,10 +1,10 @@
 <?php
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
-\Elementor\Plugin::$instance->frontend->add_body_class( 'elementor-template-full-width' );
+\Elementor\Plugin::$instance->frontend->add_body_class('elementor-template-full-width');
 
 get_header();
 /**
@@ -14,9 +14,9 @@ get_header();
  *
  * @since 2.0.0
  */
-do_action( 'elementor/page_templates/header-footer/before_content' );
+do_action('elementor/page_templates/header-footer/before_content');
 
-\Elementor\Plugin::$instance->modules_manager->get_modules( 'page-templates' )->print_content();
+\Elementor\Plugin::$instance->modules_manager->get_modules('page-templates')->print_content();
 
 /**
  * After Header-Footer page template content.
@@ -25,6 +25,6 @@ do_action( 'elementor/page_templates/header-footer/before_content' );
  *
  * @since 2.0.0
  */
-do_action( 'elementor/page_templates/header-footer/after_content' );
+do_action('elementor/page_templates/header-footer/after_content');
 
 get_footer();

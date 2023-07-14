@@ -45,7 +45,7 @@ $heading = apply_filters('ocean_page_header_heading', $heading);
 
 <?php do_action('ocean_before_page_header'); ?>
 
-<header class="<?php echo esc_attr($classes); ?>">
+<header class="<?php echo esc_attr($classes); ?> sticky-top">
 
 	<?php do_action('ocean_before_page_header_inner'); ?>
 
