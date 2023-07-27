@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The template for displaying the page header.
  *
@@ -7,69 +6,69 @@
  */
 
 // Exit if accessed directly.
-if (!defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 // Return if page header is disabled.
-if (!oceanwp_has_page_header()) {
+if ( ! oceanwp_has_page_header() ) {
 	return;
 }
 
 // Classes.
-$classes = array('page-header');
+$classes = array( 'page-header' );
 
 // Get header style.
 $style = oceanwp_page_header_style();
 
 // Add classes for title style.
-if ($style) {
-	$classes[$style . '-page-header'] = $style . '-page-header';
+if ( $style ) {
+	$classes[ $style . '-page-header' ] = $style . '-page-header';
 }
 
 // Visibility.
-$visibility = get_theme_mod('ocean_page_header_visibility', 'all-devices');
-if ('all-devices' !== $visibility) {
+$visibility = get_theme_mod( 'ocean_page_header_visibility', 'all-devices' );
+if ( 'all-devices' !== $visibility ) {
 	$classes[] = $visibility;
 }
 
 // Turn into space seperated list.
-$classes = implode(' ', $classes);
+$classes = implode( ' ', $classes );
 
 // Heading tag.
-$heading = get_theme_mod('ocean_page_header_heading_tag', 'h1');
+$heading = get_theme_mod( 'ocean_page_header_heading_tag', 'h1' );
 $heading = $heading ? $heading : 'h1';
-$heading = apply_filters('ocean_page_header_heading', $heading);
+$heading = apply_filters( 'ocean_page_header_heading', $heading );
 
 ?>
 
-<?php do_action('ocean_before_page_header'); ?>
+<?php do_action( 'ocean_before_page_header' ); ?>
 
-<header class="<?php echo esc_attr($classes); ?>">
+<header class="<?php echo esc_attr( $classes ); ?>">
 
-	<?php do_action('ocean_before_page_header_inner'); ?>
+	<?php do_action( 'ocean_before_page_header_inner' ); ?>
 
 	<div class="container clr page-header-inner">
 
 		<?php
 		// Return if page header is disabled.
-		if (oceanwp_has_page_header_heading()) {
-		?>
+		if ( oceanwp_has_page_header_heading() ) {
+			?>
 
-			<<?php echo esc_attr($heading); ?> class="page-header-title clr" <?php oceanwp_schema_markup('headline'); ?>><?php echo wp_kses_post(oceanwp_has_page_title()); ?></<?php echo esc_attr($heading); ?>>
+			<<?php echo esc_attr( $heading ); ?> class="page-header-title clr"<?php oceanwp_schema_markup( 'headline' ); ?>><?php echo wp_kses_post( oceanwp_has_page_title() ); ?></<?php echo esc_attr( $heading ); ?>>
 
-			<?php get_template_part('partials/page-header-subheading'); ?>
+			<?php get_template_part( 'partials/page-header-subheading' ); ?>
 
 		<?php } ?>
 
-		<?php do_action('ocean_breadcrumbs_main'); ?>
+		<?php do_action( 'ocean_breadcrumbs_main' ); ?>
 
 	</div><!-- .page-header-inner -->
 
 	<?php oceanwp_page_header_overlay(); ?>
 
-	<?php do_action('ocean_after_page_header_inner'); ?>
+	<?php do_action( 'ocean_after_page_header_inner' ); ?>
 
 </header><!-- .page-header -->
 
-<?php do_action('ocean_after_page_header'); ?>
+<?php do_action( 'ocean_after_page_header' ); ?>

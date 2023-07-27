@@ -22,7 +22,7 @@
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
 define('WP_CACHE', true);
-define( 'WPCACHEHOME', 'D:\FORMATION\projets openclassrooms\PROJET_6\P_6_1\Planty\wp-content\plugins\wp-super-cache/' );
+define( 'WPCACHEHOME', 'F:\D\FORMATION\projets openclassrooms\PROJET_6\P_6_1\Planty\wp-content\plugins\wp-super-cache/' );
 define( 'DB_NAME', 'planty' );
 
 /** Utilisateur de la base de données MySQL. */

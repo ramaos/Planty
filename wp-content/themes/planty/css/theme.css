@@ -1,32 +1,144 @@
-.page-header-inner.sticky-top {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap");
+
+
+
+/****   HEADER    ****/
+
+#site-logo-inner {
+  padding-left: 15%;
 }
 
-main {
-  max-width: 1440px !important;
-  margin: auto !important;
-}
-.elementor-44 {
+#site-header {
   position: sticky !important;
-  background-color: antiquewhite;
+  top: 0;
+  z-index: 20;
 }
-#wpforms-594 .wpforms-field-label {
+
+#menu-item-42 .text-wrap {
+  color: black;
+  font-size: 16px;
+  line-height: 19.2px;
   font-family: syne;
-  font-size: 20px;
-  line-height: 24px;
   font-weight: 400;
 }
-#wpforms-594 .wpforms-field-large {
-  height: 70px;
-  border-radius: 10px;
+
+#menu-item-42 .text-wrap:hover {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.6px;
+
 }
-#wpforms-594 .wpforms-submit-container {
+
+#menu-item-41 .text-wrap {
+  background-color: #dc9f96;
+  padding: 33px 70px 33px 70px;
+  margin-right: -10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  font-family: syne;
+  line-height: 19.2px;
+
+}
+
+#menu-item-41 .text-wrap:hover {
+  background-color: #c02e44;
+}
+
+
+/* ******page commander***** */
+
+
+.background-comm * {
+  font-family: syne;
+
+}
+
+.background-comm main {
+  background-color: #3b8e46 !important;
+  width: 1440px;
+  margin: auto;
+}
+
+/*      formulaire de contact        */
+.contact-envoie {
+  margin-left: 40% !important;
   display: flex;
   justify-content: center;
 }
-#wpforms-594 .wpforms-submit {
-  font-family: syne;
-  height: 55px;
-  width: 170px;
-  background-color: #e0b9b4;
+
+.contact-message {
+  z-index: 20;
 }
+
+#forminator-module-194 .forminator-label {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+}
+
+/**   formulaire de commande    **/
+
+#forminator-module-355{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#forminator-module-355 .forminator-response-message {
+  color: black;
+  padding: 10px;
+  
+}
+
+#group-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  border-right: solid 1px #ffff;
+}
+
+#group-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.forminator-repeater-label {
+  color: white;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.forminator-col {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.forminator-input {
+  background-color: white !important;
+  border-radius: 7px !important;
+  padding: 20px !important;
+}
+
+.forminator-field {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.com-commander{
+  background-color: #e0b9b4;
+  border: #e0b9b4;
+  border-radius: 5px;
+  width: 198px;
+  padding: 16px ;
+  margin-left: 38%;
+}
+
+
+/*************************************************************/
