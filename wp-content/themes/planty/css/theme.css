@@ -11,7 +11,7 @@
 #site-header {
   position: sticky !important;
   top: 0;
-  z-index: 20;
+  z-index: 20 !important;
 }
 
 #menu-item-42 .text-wrap {
@@ -57,21 +57,26 @@
 .background-comm main {
   background-color: #3b8e46 !important;
   width: 1440px;
-  margin: auto;
+  margin: auto !important;
 }
 
 /*      formulaire de contact        */
 .contact-envoie {
-  margin-left: 40% !important;
-  display: flex;
-  justify-content: center;
+  width: 198px !important;
+  padding: 18px !important;
+  margin-left: 26.5% !important;
+  border-radius: 5px !important;
 }
 
-.contact-message {
-  z-index: 20;
+.contact-message {}
+
+.contact-message .forminator-textarea {
+  background-color: white !important;
+  z-index: 11;
 }
 
 #forminator-module-194 .forminator-label {
+  color: black !important;
   font-size: 20px !important;
   font-weight: 400 !important;
   line-height: 24px !important;
@@ -79,15 +84,16 @@
 
 /**   formulaire de commande    **/
 
-#forminator-module-355{
+#forminator-module-355 {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
+
 #forminator-module-355 .forminator-response-message {
   color: black;
   padding: 10px;
-  
+
 }
 
 #group-1 {
@@ -131,13 +137,17 @@
   flex-direction: column;
   gap: 15px;
 }
-.com-commander{
+
+.com-commander {
   background-color: #e0b9b4;
   border: #e0b9b4;
   border-radius: 5px;
   width: 198px;
-  padding: 16px ;
+  padding: 16px;
   margin-left: 38%;
+}
+.com-commander:hover{
+  background-color: #c02e44;
 }
 
 
