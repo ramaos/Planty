@@ -23,20 +23,27 @@
 
 	<?php do_action('ocean_before_outer_wrap'); ?>
 
-	<div id="outer-wrap" class="site clr">
+	<div id="outer-wrap" class="site clr site-width">
 
 		<a class="skip-link screen-reader-text" href="#main"><?php echo esc_html(oceanwp_theme_strings('owp-string-header-skip-link', false)); ?></a>
 
 		<?php do_action('ocean_before_wrap'); ?>
 
-		<div id="wrap" class="clr">
+		<header class="sticky-top">
+			<div>
+				<a href="http://localhost/Planty/"><img src="http://localhost/Planty/wp-content/uploads/2023/07/cropped-Logo-1.png" alt="logo" class="logo-planty"></a>
+			</div>
+			<?php
+			wp_nav_menu([
+				'theme_location' => 'header',
+				'container' => 'false',
+				//ajout de class "ul"
+				'menu_class' => 'menu-nav'
+			]);
 
-			<?php do_action('ocean_top_bar'); ?>
+			?>
+		</header>
 
-			<?php do_action('ocean_header'); ?>
+		<main id="main" class="site-main clr" <?php oceanwp_schema_markup('main'); ?> role="main">
 
-			<?php do_action('ocean_before_main'); ?>
-
-			<main id="main" class="site-main clr" <?php oceanwp_schema_markup('main'); ?> role="main">
-
-				<?php do_action('ocean_page_header'); ?>
+			<?php do_action('ocean_page_header'); ?>
