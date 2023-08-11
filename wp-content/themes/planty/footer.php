@@ -13,6 +13,16 @@
 <?php do_action('ocean_after_main'); ?>
 
 <?php do_action('ocean_before_footer'); ?>
+<footer class="foot">
+	<?php
+	wp_nav_menu([
+		'theme_location' => 'footer',
+		'container' => 'false',
+		//ajout de la class "ul"
+		'menu_class' => 'menu-footer'
+	]);
+	?>
+</footer>
 
 <?php
 // Elementor `footer` location.
@@ -33,19 +43,8 @@ if (!function_exists('elementor_theme_do_location') || !elementor_theme_do_locat
 
 <?php do_action('ocean_after_outer_wrap'); ?>
 
-
-<footer class="foot">
-	<?php
-	wp_nav_menu([
-		'theme_location' => 'footer',
-		'container' => 'false',
-		//ajout de la class "ul"
-		'menu_class' => 'menu-footer'
-	]);
-	?>
-</footer>
-
 <?php wp_footer(); ?>
+
 </body>
 
 </html>

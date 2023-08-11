@@ -1,22 +1,11 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap");
-
-/***   pages   ****/
-
-.background_page {
-  width: 1440px;
-
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-
 
 /****   HEADER    ****/
 
 #site-logo-inner {
   padding-left: 15%;
 }
-
 .sticky-top {
   width: 1440px;
   height: 80px;
@@ -26,34 +15,16 @@
   top: 0;
   z-index: 20 !important;
 }
-
-/*.logo-planty {
-  width: 201px;
-  height: 19px;
-  margin-left: 15%;
-}*/
-
 .menu-nav {
-
   display: flex;
- 
   align-items: center;
   gap: 30px;
-
-
-
 }
-
 .nav-item {
   list-style-type: none !important;
-  
+
 
 }
-
-* .nav-item-link {
-  
-}
-
 #menu-item-41 {
   width: 14.75em;
   height: 80px;
@@ -63,39 +34,31 @@
   background-color: #dc9f96;
   text-align: center;
   margin-right: 15px;
-
-
 }
 
 #menu-item-41:hover {
   background-color: #c02e44;
 }
-
 #menu-item-41 .nav-link {
   color: white !important;
   font-size: 16px;
   font-weight: 700;
   line-height: 19.2px;
-
-
 }
-
-#menu-item-42 .nav-link{
+#menu-item-42 .nav-link {
   width: 100%;
   color: rgb(0, 0, 0) !important;
   font-size: 1em !important;
   font-weight: 400;
   line-height: 1.2em;
-
 }
-
 #menu-item-42 .nav-link:hover {
   font-size: 0.813em !important;
   font-weight: 700 !important;
   line-height: 0.975em !important;
   color: black !important;
 }
-.nav-item-link .nav-link{
+.nav-item-link .nav-link {
   color: rgb(0, 0, 0) !important;
   font-size: 1em !important;
   font-weight: 400;
@@ -108,74 +71,26 @@
   color: black !important;
 }
 
-/**************************/
-/*#menu-item-42 .text-wrap {
-  color: black;
-  font-size: 16px;
-  line-height: 19.2px;
-  font-family: syne;
-  font-weight: 400;
-}
-
-#menu-item-42 .text-wrap:hover {
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 15.6px;
-
-
-}
-
-#menu-item-41 .text-wrap {
-  background-color: #dc9f96;
-  padding: 33px 70px 33px 70px;
-  margin-right: -10px;
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-  font-family: syne;
-  line-height: 19.2px;
-
-}
-
-#menu-item-41 .text-wrap:hover {
-  background-color: #c02e44;
-}*/
-
-
-/* ******page commander***** */
-
+/*     page commander     */
 
 .background-comm * {
   font-family: syne;
-
 }
-
-.background-comm {
-  width: 1440px;
-  margin: 0 auto;
-
-}
-
 .background-comm main {
-  width: 100%;
+ /* width: 100%;*/
   background-color: #3b8e46 !important;
-
-
 }
-
 .elementor-button {
   text-decoration: none !important;
 }
 
 /*      formulaire de contact        */
+
 .contact-envoie {
   width: 198px !important;
   padding: 18px !important;
   border-radius: 5px !important;
 }
-
-
-
 .contact-message .forminator-textarea {
   background-color: white !important;
   z-index: 11;
@@ -195,65 +110,54 @@
   flex-direction: column;
   gap: 1.25em;
 }
-
 .forminator-response-message ul {
   display: none;
 }
-
 .forminator-response-message {
   color: #c02e44;
   font-size: 1em;
 }
-
 .forminator-error-message {
   color: #c02e44;
   font-size: 0.75em;
 }
-
 #group-1 {
   display: flex;
   flex-direction: column;
   gap: 3.75em;
   border-right: solid 1px #ffff;
 }
-
 #group-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 3.75em;
 }
-
 .forminator-required {
   color: #3b8e46;
 }
-
 .forminator-repeater-label {
   color: rgb(255, 255, 255);
   font-size: 1.875em;
   font-weight: 700;
   line-height: 2.25em;
 }
-
 .com-name {
   color: white;
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5em;
 }
-
 .forminator-input {
   background-color: white !important;
   border-radius: 0.438em !important;
   padding: 1.125em !important;
 }
-
 .forminator-field {
   display: flex;
   flex-direction: column;
   gap: 0.938em;
 }
-
 .com-commander {
   color: white;
   background-color: #e0b9b4;
@@ -261,40 +165,39 @@
   border-radius: 0.313em;
   width: 12.375em;
   padding: 1em;
-
 }
-
 .com-commander:hover {
   background-color: #c02e44;
 }
-
 .forminator-row-last .forminator-field {
   display: flex;
   align-items: center;
+}
+.forminator-edit-module {
+  display: none;
 }
 
 /**     FOOTER     **/
 
 .foot {
-  width: 100%;
+  
   height: 60px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-
 }
-
 .menu-footer .nav-link {
   color: black;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.2em;
-
 }
-@media only screen and (max-width: 790px){
-  #group-1{
+
+
+@media only screen and (max-width: 790px) {
+  #group-1 {
     border-right: none;
   }
 }
