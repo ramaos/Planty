@@ -1,12 +1,11 @@
 <?php
 
 //fonction pour le chargement du menu
-function planty_theme_supports(){
+function planty_theme_supports()
+{
 
-//register_nav_menu ('header','en-tete');
-register_nav_menu ('footer','pied-de-page');
-
-
+    //register_nav_menu ('header','en-tete');
+    register_nav_menu('footer', 'pied-de-page');
 }
 //fonction pour le chargement du style dans le theme planty
 function planty_theme_styles()
@@ -16,46 +15,44 @@ function planty_theme_styles()
 }
 
 //fonction pour ajout du lien "admin"
-function planty_admin_link( $items, $args ) {
+function planty_admin_link($items, $args)
+{
 
-    if (is_user_logged_in() && $args->theme_location =='main_menu') {
+    if (is_user_logged_in() && $args->theme_location == 'main_menu') {
 
-        $items='<li id= "menu-item-42" class= "nav-item "><a href="http://localhost/Planty/nous-rencontrer/" class= "nav-link">Nous rencontrer</a></li>'.'<li class= "nav-item-link nav-item"><a href="'. get_admin_url() .'"'.' class= "nav-link">Admin</a></li>'.'<li id="menu-item-41" class= "nav-item"><a href="http://localhost/Planty/commander/" class= "nav-link">Commander</a></li>';
-
+        $items = '<li id= "menu-item-42" class= "nav-item "><a href="http://localhost/Planty/nous-rencontrer/" class= "nav-link">Nous rencontrer</a></li>' . '<li class= "nav-item-link nav-item"><a href="' . get_admin_url() . '"' . ' class= "nav-link">Admin</a></li>' . '<li id="menu-item-41" class= "nav-item"><a href="http://localhost/Planty/commander/" class= "nav-link">Commander</a></li>';
     }
     return $items;
 }
 
 //fonction pour ajout de class "li"
-function planty_menu_class($classes){
- $classes[]= 'nav-item';
- return $classes;
+function planty_menu_class($classes)
+{
+    $classes[] = 'nav-item';
+    return $classes;
 }
 
 //fonction pour ajout de class des liens
-function planty_menu_link_class($attrs){
-$attrs['class']= 'nav-link';
-return $attrs;
+function planty_menu_link_class($attrs)
+{
+    $attrs['class'] = 'nav-link';
+    return $attrs;
 }
 
 
 
 
 //action pour le chargement theme support
-add_action('after_setup_theme','planty_theme_supports');
+add_action('after_setup_theme', 'planty_theme_supports');
 
 //action pour le chargement du style
 add_action('wp_enqueue_scripts', 'planty_theme_styles');
 
 //filtre ajout de link "admin"
-add_filter( 'wp_nav_menu_items','planty_admin_link', 10, 2 );
+add_filter('wp_nav_menu_items', 'planty_admin_link', 10, 2);
 
 //filtre de class "li"
 add_filter('nav_menu_css_class', 'planty_menu_class');
 
 //filtre de class "liens"
 add_filter('nav_menu_link_attributes', 'planty_menu_link_class');
-
-
-
-

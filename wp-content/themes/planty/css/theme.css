@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap");
 
 /****   HEADER    ****/
@@ -6,6 +5,7 @@
 #site-logo-inner {
   padding-left: 15%;
 }
+
 .sticky-top {
   width: 1440px;
   height: 80px;
@@ -15,16 +15,19 @@
   top: 0;
   z-index: 20 !important;
 }
+
 .menu-nav {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .nav-item {
   list-style-type: none !important;
 
 
 }
+
 #menu-item-41 {
   width: 14.75em;
   height: 80px;
@@ -39,12 +42,14 @@
 #menu-item-41:hover {
   background-color: #c02e44;
 }
+
 #menu-item-41 .nav-link {
   color: white !important;
   font-size: 16px;
   font-weight: 700;
   line-height: 19.2px;
 }
+
 #menu-item-42 .nav-link {
   width: 100%;
   color: rgb(0, 0, 0) !important;
@@ -52,18 +57,21 @@
   font-weight: 400;
   line-height: 1.2em;
 }
+
 #menu-item-42 .nav-link:hover {
   font-size: 0.813em !important;
   font-weight: 700 !important;
   line-height: 0.975em !important;
   color: black !important;
 }
+
 .nav-item-link .nav-link {
   color: rgb(0, 0, 0) !important;
   font-size: 1em !important;
   font-weight: 400;
   line-height: 1.2em;
 }
+
 .nav-item-link .nav-link:hover {
   font-size: 0.813em !important;
   font-weight: 700 !important;
@@ -76,10 +84,12 @@
 .background-comm * {
   font-family: syne;
 }
+
 .background-comm main {
- /* width: 100%;*/
+  /* width: 100%;*/
   background-color: #3b8e46 !important;
 }
+
 .elementor-button {
   text-decoration: none !important;
 }
@@ -91,6 +101,7 @@
   padding: 18px !important;
   border-radius: 5px !important;
 }
+
 .contact-message .forminator-textarea {
   background-color: white !important;
   z-index: 11;
@@ -110,54 +121,65 @@
   flex-direction: column;
   gap: 1.25em;
 }
+
 .forminator-response-message ul {
   display: none;
 }
+
 .forminator-response-message {
   color: #c02e44;
   font-size: 1em;
 }
+
 .forminator-error-message {
   color: #c02e44;
   font-size: 0.75em;
 }
+
 #group-1 {
   display: flex;
   flex-direction: column;
   gap: 3.75em;
   border-right: solid 1px #ffff;
 }
+
 #group-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 3.75em;
 }
+
 .forminator-required {
   color: #3b8e46;
 }
+
 .forminator-repeater-label {
   color: rgb(255, 255, 255);
   font-size: 1.875em;
   font-weight: 700;
   line-height: 2.25em;
 }
+
 .com-name {
   color: white;
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5em;
 }
+
 .forminator-input {
   background-color: white !important;
   border-radius: 0.438em !important;
   padding: 1.125em !important;
 }
+
 .forminator-field {
   display: flex;
   flex-direction: column;
   gap: 0.938em;
 }
+
 .com-commander {
   color: white;
   background-color: #e0b9b4;
@@ -166,13 +188,16 @@
   width: 12.375em;
   padding: 1em;
 }
+
 .com-commander:hover {
   background-color: #c02e44;
 }
+
 .forminator-row-last .forminator-field {
   display: flex;
   align-items: center;
 }
+
 .forminator-edit-module {
   display: none;
 }
@@ -180,7 +205,6 @@
 /**     FOOTER     **/
 
 .foot {
-  
   height: 60px;
   margin: 0 auto;
   display: flex;
@@ -188,6 +212,7 @@
   align-items: center;
   background-color: white;
 }
+
 .menu-footer .nav-link {
   color: black;
   font-size: 1em;
