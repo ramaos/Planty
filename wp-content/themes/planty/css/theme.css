@@ -51,7 +51,6 @@
 }
 
 #menu-item-42 .nav-link {
-  width: 100%;
   color: rgb(0, 0, 0) !important;
   font-size: 1em !important;
   font-weight: 400;
@@ -77,6 +76,10 @@
   font-weight: 700 !important;
   line-height: 0.975em !important;
   color: black !important;
+}
+
+.oceanwp-mobile-menu-icon{
+  margin-right: 1em;
 }
 
 /*     page commander     */
