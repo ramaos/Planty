@@ -22,7 +22,8 @@ function planty_admin_link($items, $args)
 
         $items = '<li id= "menu-item-42" class= "nav-item "><a href="http://localhost/Planty/nous-rencontrer/" class= "nav-link">Nous rencontrer</a></li>' . '<li class= "nav-item-link nav-item"><a href="' . get_admin_url() . '"' . ' class= "nav-link">Admin</a></li>' . '<li id="menu-item-41" class= "nav-item"><a href="http://localhost/Planty/commander/" class= "nav-link">Commander</a></li>';
     }
-    return $items;
+    return $items ;
+
 }
 
 //fonction pour ajout de class "li"
